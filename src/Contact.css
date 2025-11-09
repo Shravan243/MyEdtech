@@ -1,0 +1,100 @@
+/* Container */
+.contact-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Arial", sans-serif;
+}
+
+/* Main Section - Flex layout */
+.contact-section {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Left Column */
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex: 2; /* Takes more space than right column */
+}
+
+/* Info Boxes */
+.info-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 25px;
+  background-color: #f1f1f1;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Icon inside info box */
+.info-box img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Right Column - Contact Form */
+.right-column {
+  flex: 1; /* takes remaining space */
+  min-width: 300px;
+  background-color: #f9f9f9;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Form Heading */
+.right-column h2 {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/* Contact form inputs and textarea */
+.right-column input,
+.right-column textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box; /* include padding in width */
+}
+
+/* Submit Button */
+.right-column button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #0077ff;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.right-column button:hover {
+  background-color: #005fcc;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-section {
+    flex-direction: column;
+  }
+
+  .left-column,
+  .right-column {
+    flex: unset;
+    width: 100%;
+  }
+}
