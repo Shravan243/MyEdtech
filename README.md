@@ -39,4 +39,4 @@ Page Description
 ---
 
 Clone the repository:
-git clone https://github.com/yourusername/edupro.git
+git clone https://github.com/Shravan243/MyEdtech.git
